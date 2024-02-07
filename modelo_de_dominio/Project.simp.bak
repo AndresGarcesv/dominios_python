@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.00" multi-file="no" uid="simpcefa38a410f1453a9c4be639bfce2395" creation-date="02/07/2024 14:37:46">
+  <meta>
+    <name>Project</name>
+    <authors> Aprendiz</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>7</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>4</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-0781434e8aa94be28e4e48f3102a2167" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name>Aprendiz</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-315c3d9cdb5044deb7b464878c51121f" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="Class:28035fac01d34d67896d4707813f2de6" name="Carro" class-ref="28035fac01d34d67896d4707813f2de6" />
+        <type id="Class:688b853c97ee454ab4f8b9b34db1d185" name="Cliente" class-ref="688b853c97ee454ab4f8b9b34db1d185" />
+      </types>
+    </custom-types>
+  </types>
+  <items>
+    <item id="61f98516a0714f4b913904c4df3a0846" cid="PROP001" type="property" owner="94e32956cd894c7da88273dba3cc26b0" creator="" creation-date="02/07/2024 14:42:38" visibility="private">
+      <structural-feature type="Cliente" type-id="Class:688b853c97ee454ab4f8b9b34db1d185" />
+      <property aggregation="composite" />
+    </item>
+    <item id="bff74fc354314123aa80cb4b3933764f" cid="PROP002" type="property" owner="94e32956cd894c7da88273dba3cc26b0" creator="" creation-date="02/07/2024 14:42:38" visibility="private">
+      <structural-feature multiplicity="1..*" type="Carro" type-id="Class:28035fac01d34d67896d4707813f2de6" />
+    </item>
+  </items>
+  <models>
+    <model id="p014e5c84471241af93e28c324b486db6_656265882" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> Aprendiz</author>
+        </authors>
+        <description />
+        <creation-date>02/07/2024 14:37:49</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p77df7dc0a6904fd58474e2556ac351ca_657187740" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> Aprendiz</author>
+          </authors>
+          <description />
+          <creation-date>02/07/2024 14:37:49</creation-date>
+          <change-date>02/07/2024 14:42:38</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="94e32956cd894c7da88273dba3cc26b0" cid="REL001" type="relationship" creator="" creation-date="02/07/2024 14:42:38" from="688b853c97ee454ab4f8b9b34db1d185" to="28035fac01d34d67896d4707813f2de6" visibility="package">
+            <owned-items />
+            <relation from="688b853c97ee454ab4f8b9b34db1d185" to="28035fac01d34d67896d4707813f2de6" derived="false">
+              <start-role id="umlar-3f4f69ff-6b4b-48ae-960b-8b78cd7645c9" name="" navigability="" association-type="composition" visibility="private" property-ref="61f98516a0714f4b913904c4df3a0846" />
+              <end-role id="umlar-a86b54ec-2301-46af-9d53-e3358863f65c" name="" navigability="" association-type="association" visibility="private" property-ref="bff74fc354314123aa80cb4b3933764f" />
+            </relation>
+          </item>
+          <item id="7fd304626f704be98c8077b8bb3d1e96" cid="PROP004" type="property" name="lista_carros" owner="688b853c97ee454ab4f8b9b34db1d185" creator="" creation-date="02/07/2024 14:54:41" visibility="private" />
+          <item id="28035fac01d34d67896d4707813f2de6" cid="C002" type="class" name="Carro" creator="" creation-date="02/07/2024 14:40:11" />
+          <item id="688b853c97ee454ab4f8b9b34db1d185" cid="C001" type="class" name="Cliente" creator="" creation-date="02/07/2024 14:39:58">
+            <owned-items />
+            <attributes>
+              <attribute id="a2bcbfa222ad346b4aaffb8e6cd2f49bd752" cid="PROP003" name="nombre" creation-date="02/07/2024 14:53:26" property-ref="e56e478f2ffe439e8605782da1fe5dcb" />
+              <attribute id="a1b5943af5a9e4b9ea52cde1568237c53789" cid="PROP004" name="lista_carros" creation-date="02/07/2024 14:54:41" property-ref="7fd304626f704be98c8077b8bb3d1e96" />
+            </attributes>
+            <operations>
+              <operation id="o59d6a2b40927459a9d3040cc000a6597704" cid="OP001" name="addCar" creation-date="02/07/2024 14:52:42" type="" type-id="" visibility="public" />
+              <operation id="o7d6d8978823a49e78454f1a3481a7272371" cid="OP002" name="removeCar" creation-date="02/07/2024 14:53:06" type="" type-id="" visibility="public" />
+              <operation id="o0e45a78b89854cef89475f63dbf9288f731" cid="OP003" name="listCar" creation-date="02/07/2024 16:35:30" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="e56e478f2ffe439e8605782da1fe5dcb" cid="PROP003" type="property" name="nombre" owner="688b853c97ee454ab4f8b9b34db1d185" creator="" creation-date="02/07/2024 14:53:26" visibility="private" />
+        </abstract-items>
+        <layer id="8a1aea191d224e26b0f474d2c6e8cf5f" name="Default" visible="true" enabled="true" locked="false">
+          <item id="688b853c97ee454ab4f8b9b34db1d185" iid="e730716c79804ac8b6e2250c0705e398" show-fields="true" creation-date="02/07/2024 14:39:58" order-index="0" type="entity">
+            <layout ax="37" ay="47" awidth="140" aheight="160" x="37" y="47" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="28035fac01d34d67896d4707813f2de6" iid="58f8a53f18bd435ca91911c37920f540" show-fields="true" creation-date="02/07/2024 14:40:11" order-index="1" type="entity">
+            <layout ax="323" ay="47" awidth="140" aheight="160" x="323" y="47" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="94e32956cd894c7da88273dba3cc26b0" iid="42f480d1cee14b36be1293ef300dbba6" creation-date="02/07/2024 14:42:38" order-index="2" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="177" y1="127" x2="323" y2="127" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="80" end-local-pos="80" name-position="0,20">
+              <points>
+                <point x="177" y="127" />
+                <point x="323" y="127" />
+              </points>
+            </layout>
+            <relation from="688b853c97ee454ab4f8b9b34db1d185" from-iid="e730716c79804ac8b6e2250c0705e398" to="28035fac01d34d67896d4707813f2de6" to-iid="58f8a53f18bd435ca91911c37920f540" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
