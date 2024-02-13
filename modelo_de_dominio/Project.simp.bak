@@ -27,11 +27,15 @@
       </counter>
       <counter>
         <item-type type-id="comment" type="Comment" />
-        <value>2</value>
+        <value>3</value>
       </counter>
       <counter>
         <item-type type-id="constraint-connector" type="Constraint Connector" />
         <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="Comment Connector" />
+        <value>2</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -89,13 +93,13 @@
         <type id="Class:78c02c48a9444e88af0ee7fd1f8da694" name="Cupo" class-ref="78c02c48a9444e88af0ee7fd1f8da694" />
         <type id="Class:688b853c97ee454ab4f8b9b34db1d185" name="Cliente" class-ref="688b853c97ee454ab4f8b9b34db1d185" />
         <type id="Class:8db99aaf39c9487aa1e2c11003f7697f" name="Pago" class-ref="8db99aaf39c9487aa1e2c11003f7697f" />
-        <type id="Class:28035fac01d34d67896d4707813f2de6" name="Carro" class-ref="28035fac01d34d67896d4707813f2de6" />
+        <type id="Class:28035fac01d34d67896d4707813f2de6" name="Vehiculo" class-ref="28035fac01d34d67896d4707813f2de6" />
       </types>
     </custom-types>
   </types>
   <items>
     <item id="bff74fc354314123aa80cb4b3933764f" cid="PROP002" type="property" owner="94e32956cd894c7da88273dba3cc26b0" creator="" creation-date="02/07/2024 14:42:38" visibility="private">
-      <structural-feature multiplicity="1..*" type="Carro" type-id="Class:28035fac01d34d67896d4707813f2de6" />
+      <structural-feature multiplicity="1..*" type="Vehiculo" type-id="Class:28035fac01d34d67896d4707813f2de6" />
     </item>
     <item id="8cb1eb9c06e64a5e86578e3190a214a9" cid="PROP018" type="property" name="se hace a" owner="df3bd98a5c124fe78a57e8c216ed577e" creator="" creation-date="02/13/2024 14:00:56" visibility="private">
       <structural-feature multiplicity="*" type="Pago" type-id="Class:8db99aaf39c9487aa1e2c11003f7697f" />
@@ -104,13 +108,13 @@
       <structural-feature type="Cliente" type-id="Class:688b853c97ee454ab4f8b9b34db1d185" />
       <property aggregation="composite" />
     </item>
-    <item id="c47c1afe6e7849558b30e9f800bc67ee" cid="PROP021" type="property" owner="f64c4ab2aaf941748631d10bb1715903" creator="" creation-date="02/13/2024 14:13:24" visibility="private">
-      <structural-feature multiplicity="1" type="Carro" type-id="Class:28035fac01d34d67896d4707813f2de6" />
+    <item id="c47c1afe6e7849558b30e9f800bc67ee" cid="PROP021" type="property" name="se relaciona a" owner="f64c4ab2aaf941748631d10bb1715903" creator="" creation-date="02/13/2024 14:13:24" visibility="private">
+      <structural-feature multiplicity="1" type="Vehiculo" type-id="Class:28035fac01d34d67896d4707813f2de6" />
     </item>
     <item id="5cad13c7e61b42b9a19c9f0140745e2f" cid="PROP019" type="property" name="se relaciona a" owner="df3bd98a5c124fe78a57e8c216ed577e" creator="" creation-date="02/13/2024 14:00:56" visibility="private">
       <structural-feature multiplicity="1" type="Cupo" type-id="Class:78c02c48a9444e88af0ee7fd1f8da694" />
     </item>
-    <item id="108770d057a445cc8e28da162d217b19" cid="PROP020" type="property" owner="f64c4ab2aaf941748631d10bb1715903" creator="" creation-date="02/13/2024 14:13:24" visibility="private">
+    <item id="108770d057a445cc8e28da162d217b19" cid="PROP020" type="property" name="se registra para" owner="f64c4ab2aaf941748631d10bb1715903" creator="" creation-date="02/13/2024 14:13:24" visibility="private">
       <structural-feature multiplicity="1" type="Pago" type-id="Class:8db99aaf39c9487aa1e2c11003f7697f" />
     </item>
   </items>
@@ -128,7 +132,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p77df7dc0a6904fd58474e2556ac351ca_657187740" name="ClassDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
+      <diagram type="uml-class" id="p77df7dc0a6904fd58474e2556ac351ca_657187740" name="ClassDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,-465">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -140,7 +144,7 @@
           </authors>
           <description />
           <creation-date>02/07/2024 14:37:49</creation-date>
-          <change-date>02/13/2024 14:13:24</change-date>
+          <change-date>02/13/2024 14:17:33</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -178,7 +182,7 @@ Permite definir en papel que juega una entidad de una relación de asociación.<
           </item>
           <item id="393844baa2ef4f45aa906f7531c09489" cid="PROP016" type="property" name="hora_fin" owner="8db99aaf39c9487aa1e2c11003f7697f" creator="" creation-date="02/13/2024 13:59:21" visibility="private" />
           <item id="84a1539d1e894a1881dfdbd235686c34" cid="PROP008" type="property" name="identificacion" owner="688b853c97ee454ab4f8b9b34db1d185" creator="" creation-date="02/13/2024 13:56:28" visibility="private">
-            <structural-feature type="Carro" type-id="Class:28035fac01d34d67896d4707813f2de6" />
+            <structural-feature type="Vehiculo" type-id="Class:28035fac01d34d67896d4707813f2de6" />
           </item>
           <item id="688b853c97ee454ab4f8b9b34db1d185" cid="C001" type="class" name="Cliente" creator="" creation-date="02/07/2024 14:39:58" visibility="undefined">
             <owned-items />
@@ -214,7 +218,7 @@ Permite definir en papel que juega una entidad de una relación de asociación.<
           </item>
           <item id="e56e478f2ffe439e8605782da1fe5dcb" cid="PROP003" type="property" name="nombre" owner="688b853c97ee454ab4f8b9b34db1d185" creator="" creation-date="02/07/2024 14:53:26" visibility="private" />
           <item id="13447868060743959167bcfdf38ba50e" cid="PROP011" type="property" name="letra" owner="78c02c48a9444e88af0ee7fd1f8da694" creator="" creation-date="02/13/2024 13:57:28" visibility="private" />
-          <item id="28035fac01d34d67896d4707813f2de6" cid="C002" type="class" name="Carro" creator="" creation-date="02/07/2024 14:40:11" visibility="undefined">
+          <item id="28035fac01d34d67896d4707813f2de6" cid="C002" type="class" name="Vehiculo" creator="" creation-date="02/07/2024 14:40:11" visibility="undefined">
             <owned-items />
             <attributes>
               <attribute id="ae98571930efd4bf384d97469035fc0031" cid="PROP009" name="tipo_vehiculo" creation-date="02/13/2024 13:56:57" property-ref="3570f715d62445208d330fd7c4c7b43e" />
@@ -235,39 +239,39 @@ Permite definir en papel que juega una entidad de una relación de asociación.<
         </abstract-items>
         <layer id="8a1aea191d224e26b0f474d2c6e8cf5f" name="Default" visible="true" enabled="true" locked="false">
           <item id="688b853c97ee454ab4f8b9b34db1d185" iid="e730716c79804ac8b6e2250c0705e398" show-fields="true" creation-date="02/07/2024 14:39:58" order-index="0" type="entity">
-            <layout ax="18" ay="-393" awidth="140" aheight="174" x="18" y="-393" width="140" height="160" />
+            <layout ax="0" ay="-447" awidth="140" aheight="174" x="0" y="-447" width="140" height="160" />
             <classifier />
             <class />
           </item>
           <item id="28035fac01d34d67896d4707813f2de6" iid="58f8a53f18bd435ca91911c37920f540" show-fields="true" creation-date="02/07/2024 14:40:11" order-index="1" type="entity">
-            <layout ax="449" ay="-389.5" awidth="140" aheight="167" x="449" y="-389.5" width="140" height="167" />
+            <layout ax="449" ay="-443.5" awidth="140" aheight="167" x="449" y="-443.5" width="140" height="167" />
             <classifier />
             <class />
           </item>
           <item id="94e32956cd894c7da88273dba3cc26b0" iid="42f480d1cee14b36be1293ef300dbba6" creation-date="02/07/2024 14:42:38" order-index="2" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="158" y1="-306" x2="449" y2="-306" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="80" end-local-pos="80" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="140" y1="-360" x2="449" y2="-360" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="80" end-local-pos="80" name-position="0,20">
               <points>
-                <point x="158" y="-306" />
-                <point x="449" y="-306" />
+                <point x="140" y="-360" />
+                <point x="449" y="-360" />
               </points>
             </layout>
             <relation from="688b853c97ee454ab4f8b9b34db1d185" from-iid="e730716c79804ac8b6e2250c0705e398" to="28035fac01d34d67896d4707813f2de6" to-iid="58f8a53f18bd435ca91911c37920f540" />
           </item>
           <item id="78c02c48a9444e88af0ee7fd1f8da694" iid="471bd93437cd423395baf2c690deb23c" show-fields="true" creation-date="02/13/2024 13:57:19" order-index="3" type="entity">
-            <layout ax="449" ay="-144.5" awidth="140" aheight="127" x="449" y="-144.5" width="140" height="127" />
+            <layout ax="30" ay="-117.5" awidth="140" aheight="143.5" x="30" y="-117.5" width="140" height="143.5" />
             <classifier />
             <class />
           </item>
           <item id="8db99aaf39c9487aa1e2c11003f7697f" iid="fd9a07df3b79454bb43c533bb2646371" show-fields="true" creation-date="02/13/2024 13:57:49" order-index="4" type="entity">
-            <layout ax="18" ay="-161" awidth="140" aheight="160" x="18" y="-161" width="140" height="160" />
+            <layout ax="449" ay="-134" awidth="140" aheight="174" x="449" y="-134" width="140" height="174" />
             <classifier />
             <class />
           </item>
           <item id="df3bd98a5c124fe78a57e8c216ed577e" iid="a1f4f784dfeb415e947b1b8dff948ace" creation-date="02/13/2024 14:00:56" order-index="5" type="relation">
-            <layout start-role-position="40.897175,-15.054624" end-role-position="49.99471,-16.124989" start-multiplicity-position="38.10952,16.955269" end-multiplicity-position="31.010242,17.979414" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="158" y1="-82" x2="449" y2="-81" start-border-pos="0.37265625" end-border-pos="0.875" start-local-pos="79" end-local-pos="49" name-position="-1,19">
+            <layout start-role-position="40.897175,-15.054624" end-role-position="49.99471,-16.124989" start-multiplicity-position="38.10952,16.955269" end-multiplicity-position="31.010242,17.979414" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="449" y1="-55" x2="170" y2="-46" start-border-pos="0.8872126436781609" end-border-pos="0.875" start-local-pos="79" end-local-pos="49" name-position="-1,19">
               <points>
-                <point x="158" y="-82" />
-                <point x="449" y="-81" />
+                <point x="449" y="-55" />
+                <point x="170" y="-46" />
               </points>
             </layout>
             <relation from="8db99aaf39c9487aa1e2c11003f7697f" from-iid="fd9a07df3b79454bb43c533bb2646371" from-field="a705219cb2e454fa88b9d743aeaf27897357" to="78c02c48a9444e88af0ee7fd1f8da694" to-iid="471bd93437cd423395baf2c690deb23c" />
@@ -276,19 +280,19 @@ Permite definir en papel que juega una entidad de una relación de asociación.<
             <layout ax="18" ay="123" awidth="417" aheight="185" x="18" y="123" width="417" height="185" />
           </item>
           <item id="959b010b48f44f61857c86af68f8ee59" iid="80bd47a158e8413b9e1451125fb0c341" creation-date="02/13/2024 14:11:36" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="88" y1="-1" x2="84" y2="123" start-border-pos="0.625" end-border-pos="0.039568345323741004" start-local-pos="70" end-local-pos="66" name-position="0,20">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="519" y1="40" x2="84" y2="123" start-border-pos="0.625" end-border-pos="0.039568345323741004" start-local-pos="70" end-local-pos="66" name-position="0,20">
               <points>
-                <point x="88" y="-1" />
+                <point x="519" y="40" />
                 <point x="84" y="123" />
               </points>
             </layout>
             <relation from="8db99aaf39c9487aa1e2c11003f7697f" from-iid="fd9a07df3b79454bb43c533bb2646371" to="23e0316a345b452a970ed890f4d8a388" to-iid="bb016a2d9488438fb5dcd855a50a46bf" />
           </item>
           <item id="f64c4ab2aaf941748631d10bb1715903" iid="bcb668b34dae4832899e22c2ac87766e" creation-date="02/13/2024 14:13:24" order-index="8" type="relation">
-            <layout start-role-position="38.96727,-18.910385" end-role-position="29.31603,-16.17122" start-multiplicity-position="39.434895,24.770086" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="146" y1="-161" x2="449" y2="-222" start-border-pos="0.22857142857142856" end-border-pos="0.75" start-local-pos="128" end-local-pos="167.5" name-position="0,20">
+            <layout start-role-position="17.96727,-73.9104" start-role-width="129" end-role-position="22.302002,-56.751892" start-multiplicity-position="21.43489,39.77008" end-multiplicity-position="24,38" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="519" y1="-134" x2="519" y2="-276" start-border-pos="0.125" end-border-pos="0.625" start-local-pos="70" end-local-pos="70" name-position="2,-1">
               <points>
-                <point x="146" y="-161" />
-                <point x="449" y="-222" />
+                <point x="519" y="-134" />
+                <point x="519" y="-276" />
               </points>
             </layout>
             <relation from="8db99aaf39c9487aa1e2c11003f7697f" from-iid="fd9a07df3b79454bb43c533bb2646371" to="28035fac01d34d67896d4707813f2de6" to-iid="58f8a53f18bd435ca91911c37920f540" />
