@@ -27,6 +27,20 @@ class Cupo():
         def __init__(self, letra):
             self.letra = letra
 
+class Empleado():
+
+    def __init__(self,codigo,nombre_empleado):
+
+        
+         self.codigo = codigo
+         self.nombre_empleado = nombre_empleado            
+
+
+
+
+
+
+
 class Pago():
 
         def __init__(self,fecha_inicio, hora_inicio, fecha_fin, hora_fin, valor, carro, cupo, empleado):
@@ -38,3 +52,4 @@ class Pago():
             self.carro = carro
             self.cupo = cupo
             self.empleado = empleado
+
